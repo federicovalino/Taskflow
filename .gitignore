@@ -1,0 +1,27 @@
+# Archivos de entorno (NO subir credenciales)
+.env
+**/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Node.js (si usás React/Vite/Vue en frontend)
+node_modules/
+dist/
+build/
+
+# Docker
+postgres_data/
+
+# Logs
+*.log
+
+# Editor/IDE (Visual Studio Code, JetBrains, etc.)
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
