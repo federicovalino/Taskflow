@@ -6,3 +6,4 @@ psycopg2-binary
 python-jose[cryptography]  # Para JWT
 passlib[bcrypt]            # Para hashear contraseñas
 python-dotenv              # Para manejar variables de entorno
+alembic
