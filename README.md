@@ -1,46 +1,57 @@
-# Task Manager App 🗂️
+# Taskflow 🗂️
 
-Aplicación para la gestión de tareas con control de usuarios, asignación y seguimiento de estados.
+> ⚠️ **Work in progress** — this project is currently under active development and not yet complete.
 
-## 🚀 Tecnologías
+A task management application with user control, task assignment and status tracking.
 
-- **Backend**: FastAPI + PostgreSQL + SQLAlchemy + Alembic
-- **Frontend**: React + Vite
-- **Infraestructura**: Docker + Docker Compose
+---
 
-## 📦 Estructura del Proyecto
+## 🚀 Tech Stack
 
+- **Backend:** FastAPI + PostgreSQL + SQLAlchemy + Alembic
+- **Frontend:** React + Vite
+- **Infrastructure:** Docker + Docker Compose
+
+---
+
+## 📦 Project Structure
+
+```
 📁 backend/
-│ ├── app/
-│ │ ├── main.py
-│ │ ├── models/
-│ │ ├── routers/
-│ │ ├── schemas/
-│ │ └── database.py
-│ └── alembic/
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── models/
+│   │   ├── routers/
+│   │   ├── schemas/
+│   │   └── database.py
+│   └── alembic/
 📁 frontend/
-│ └── src/
+│   └── src/
 📁 db/
-│ └── postgres_data/
+│   └── postgres_data/
 📄 docker-compose.yml
+```
 
-## 🧱 Modelo de Datos
+---
 
-- **User**: id, name, email, created_date
-- **Task**: id, title, description, priority, expiry_date
-- **Status**: id, description
-- **User_Task**: user_id, task_id, date_of_assignment
-- **Status_Task**: task_id, status_id, date
+## 🧱 Data Model
 
-## 🧪 Cómo levantar el proyecto
+- **User:** id, name, email, created_date
+- **Task:** id, title, description, priority, expiry_date
+- **Status:** id, description
+- **User_Task:** user_id, task_id, date_of_assignment
+- **Status_Task:** task_id, status_id, date
+
+---
+
+## 🧪 Running the Project
 
 ```bash
-git clone https://github.com/tuusuario/task-manager-app.git
-cd task-manager-app
+git clone https://github.com/federicovalino/Taskflow.git
+cd Taskflow
 docker-compose up --build
+```
 
-- FastAPI en: http://localhost:8000/docs
-
-- React en: http://localhost:5173
-
-- PostgreSQL en puerto 5432
+- FastAPI docs: http://localhost:8000/docs
+- React frontend: http://localhost:5173
+- PostgreSQL: port 5432
